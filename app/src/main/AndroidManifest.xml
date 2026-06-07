@@ -12,16 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlbumTracker"
         tools:ignore="ExtraText">
+
         <activity
             android:name=".ui.dashboard.DashboardActivity"/>
 
         <activity
             android:name=".ui.album.AlbumActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
 
     </application>
