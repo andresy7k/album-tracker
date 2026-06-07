@@ -15,5 +15,12 @@
     <string name="search">
         Buscar
     </string>
+    <string name="search_hint">Buscar jugador</string>
+    <string name="label_country">País: %1$s</string>
+    <string name="label_team">Equipo: %1$s</string>
+    <string name="label_position">Posición: %1$s</string>
+    <string name="error_player_not_found">Jugador no encontrado</string>
+    <string name="error_connection">Error de conexión</string>
+    <string name="error_empty_query">Por favor, ingrese un nombre</string>
 
 </resources>
