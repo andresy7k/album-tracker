@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AlbumTracker">
 
         <activity
+            android:name=".ui.statistics.StatisticsActivity"/>
+
+        <activity
             android:name=".ui.dashboard.DashboardActivity"
             android:exported="true">
             <intent-filter>
