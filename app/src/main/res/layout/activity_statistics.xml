@@ -2,24 +2,23 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/txtTitle"
+        android:id="@+id/txtStatsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="My Album"
+        android:text="Estadísticas"
         android:textSize="28sp"
         android:textStyle="bold"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewStickers"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/txtCompletion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0% completado"/>
 
 </LinearLayout>
