@@ -12,10 +12,15 @@
         android:theme="@style/Theme.AlbumTracker">
 
         <activity
-            android:name=".ui.statistics.StatisticsActivity"/>
+            android:name=".ui.statistics.StatisticsActivity"
+            android:exported="false" />
 
         <activity
             android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
