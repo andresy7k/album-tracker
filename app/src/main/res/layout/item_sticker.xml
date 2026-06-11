@@ -6,19 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="12dp">
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/txtStickerNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="#001"
+            android:textSize="14sp"
             android:textStyle="bold"/>
 
         <TextView
@@ -26,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lionel Messi"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"/>
 
         <TextView
@@ -36,10 +38,11 @@
             android:text="Argentina"/>
 
         <TextView
-            android:id="@+id/txtStatus"
+            android:id="@+id/txtStickerStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Obtained"/>
+            android:text="OBTENIDA"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 

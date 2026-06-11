@@ -10,14 +10,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ÁLBUM COMPLETO"
+        android:text="LÁMINAS OBTENIDAS"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_margin="16dp"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerAlbum"
+        android:id="@+id/recyclerObtained"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

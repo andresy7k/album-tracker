@@ -11,7 +11,6 @@ import com.example.albumtracker.data.repository.StickerRepository
 class AlbumActivity : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: StickerAdapter
     private lateinit var repository: StickerRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,19 +18,21 @@ class AlbumActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_album)
 
-        recyclerView = findViewById(R.id.recyclerViewStickers)
+        recyclerView =
+            findViewById(R.id.recyclerAlbum)
 
-        repository = StickerRepository(
+        val dbHelper =
             DatabaseHelper(this)
-        )
 
-        val stickers = repository.getAllStickers()
-
-        adapter = StickerAdapter(stickers)
+        repository =
+            StickerRepository(dbHelper)
 
         recyclerView.layoutManager =
             LinearLayoutManager(this)
 
-        recyclerView.adapter = adapter
+        recyclerView.adapter =
+            StickerAdapter(
+                repository.getAllStickers()
+            )
     }
 }
