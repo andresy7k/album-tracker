@@ -17,7 +17,7 @@ class StickerAdapter(
     ) : RecyclerView.ViewHolder(itemView) {
 
         val txtNumber: TextView =
-            itemView.findViewById(R.id.txtNumber)
+            itemView.findViewById(R.id.txtStickerNumber)
 
         val txtPlayer: TextView =
             itemView.findViewById(R.id.txtPlayerName)
@@ -26,7 +26,7 @@ class StickerAdapter(
             itemView.findViewById(R.id.txtCountry)
 
         val txtStatus: TextView =
-            itemView.findViewById(R.id.txtStatus)
+            itemView.findViewById(R.id.txtStickerStatus)
     }
 
     override fun onCreateViewHolder(
